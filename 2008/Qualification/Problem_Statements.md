@@ -27,13 +27,13 @@ Limits
 
 	0 < N ≤ 20
 
-Small dataset
+### Small dataset
 
 	2 ≤ S ≤ 10
 	
 	0 ≤ Q ≤ 100
 
-Large dataset
+### Large dataset
 
 	2 ≤ S ≤ 100
 	
@@ -108,13 +108,13 @@ For each test case, output one line containing "Case #x: " followed by the numbe
 
 	1 ≤ N ≤ 100
 
-## Small dataset
+### Small dataset
 
 	0 ≤ NA, NB ≤ 20
 	
 	0 ≤ T ≤ 5
 
-Large dataset
+### Large dataset
 
 	0 ≤ NA, NB ≤ 100
 	
@@ -177,13 +177,13 @@ f, R, t, r and g will be positive and smaller or equal to 10000.
 	
 	r < R
 
-Small dataset
+### Small dataset
 
 	1 ≤ N ≤ 30
 
 The total number of strings will be at most 60 (so at most 30 in each direction).
 
-Large dataset
+### Large dataset
 
 	1 ≤ N ≤ 100
 
