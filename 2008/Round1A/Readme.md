@@ -123,3 +123,50 @@ The sum of all the T values for the customers in a test case will not exceed 300
 In the first case, you must make flavor #1 malted, to satisfy the first customer. Every other flavor can be unmalted. The second customer is satisfied by getting flavor #2 unmalted, and the third customer is satisfied by getting flavor #5 unmalted.
 
 In the second case, there is only one flavor. One of your customers wants it malted and one wants it unmalted. You cannot satisfy them both.
+
+# Problem C. Numbers
+
+In this problem, you have to find the last three digits before the decimal point for the number (3 + √5)n.
+
+For example, when n = 5, (3 + √5)5 = 3935.73982... The answer is 935.
+
+For n = 2, (3 + √5)2 = 27.4164079... The answer is 027.
+
+## Input
+
+The first line of input gives the number of cases, T. T test cases follow, each on a separate line. Each test case contains one positive integer n.
+
+## Output
+
+For each input case, you should output:
+
+	Case #X: Y
+
+where X is the number of the test case and Y is the last three integer digits of the number (3 + √5)n. In case that number has fewer than three integer digits, add leading zeros so that your output contains exactly three digits.
+
+## Limits
+
+	1 <= T <= 100
+
+### Small dataset
+
+	2 <= n <= 30
+
+### Large dataset
+
+	2 <= n <= 2000000000
+
+## Sample
+
+
+### Input 
+
+	2
+	5
+	2
+	
+### Output 
+ 
+	Case #1: 935
+	Case #2: 027
+
