@@ -1,2 +1,1 @@
 add_subdirectory(Qualification)
-add_subdirectory(Round1A)

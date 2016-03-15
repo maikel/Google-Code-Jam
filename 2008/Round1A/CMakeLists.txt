@@ -1,0 +1,2 @@
+add_executable(minimum_scalar_product minimum_scalar_product.cpp)
+add_executable(milkshake milkshake.cpp)
