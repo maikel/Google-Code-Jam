@@ -1,7 +1,5 @@
-#include <iostream>
-#include <sstream>
-#include <set>
-#include <functional>
+#include <iostream> // cin, cout
+#include <set>      // multiset
 
 using namespace std;
 
@@ -34,8 +32,6 @@ Time operator+(Time const& t, Time const& s) noexcept
    // dont use modulo to mirror that
 }
 
-   // if hours exceeds 24 its the next day
-   // dont use modulo to mirror that
 /** Look for a time entry in `arrivals` before given time `t`.
  * If no such entry was found return end(arrivals).*/
 multiset<Time>::iterator
@@ -54,9 +50,10 @@ find_available_train(Time const& t, multiset<Time> const& arrivals)
 int satisfy_time_table(
    multiset<Time> const& departures, multiset<Time> arrivals)
 {
+   using iterator = multiset<Time>::iterator;
    int start_trains = 0;
    for (Time departure : departures) {
-      auto available_train = find_available_train(departure, arrivals);
+      iterator available_train = find_available_train(departure, arrivals);
       if (available_train == end(arrivals))
          ++start_trains;
       else
@@ -68,7 +65,7 @@ int satisfy_time_table(
 int main()
 {
    size_t N;
-   cin >> N;
+   cin >> N; // number test cases
 
    for (size_t n = 0; n < N; ++n) {
       int T;
