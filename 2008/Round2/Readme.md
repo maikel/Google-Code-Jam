@@ -8,7 +8,7 @@ The root of the tree is of particular interest to us. We would really like for t
 
 Given a description of a boolean tree and what gates can be changed, find the minimum number of gates that need to be changed to make the value of the root node V. If this is impossible, output "IMPOSSIBLE" (quotes for clarity).
 
-Input
+## Input
 
 The first line of the input file contains the number of cases, N. N test cases follow.
 
@@ -24,51 +24,53 @@ To help visualize, here is a picture of the tree in the first sample input.
 
 ![Tree](tree.png)
  
-Output
+## Output
 
 For each test case, you should output:
 
-Case #X: Y
+	Case #X: Y
+
 where X is the number of the test case and Y is the minimum number of gates that must be changed to make the output of the root node V, or "IMPOSSIBLE" (quotes for clarity) if this is impossible.
-Limits
 
-1 < N ≤ 20
+## Limits
 
-Small dataset
+	1 < N ≤ 20
 
-2 < M < 30
+### Small dataset
 
-Large dataset
+	2 < M < 30
 
-2 < M < 10000
+### Large dataset
 
-Sample
+	2 < M < 10000
+
+## Sample
 
 
-Input 
- 	
-2
-9 1
-1 0
-1 1
-1 1
-0 0
-1
-0
-1
-0
-1
-5 0
-1 1
-0 0
-1
-1
-0
+### Input 
 
-Output 
+	2
+	9 1
+	1 0
+	1 1
+	1 1
+	0 0
+	1
+	0
+	1
+	0
+	1
+	5 0
+	1 1
+	0 0
+	1
+	1
+	0
 
-Case #1: 1
-Case #2: IMPOSSIBLE
+### Output 
+
+	Case #1: 1
+	Case #2: IMPOSSIBLE
 
 In case 1, we can change the gate on node 3 to an OR gate to achieve the desired result at the root.
 In case 2, only the root can be changed but changing it to an OR gate does not help.

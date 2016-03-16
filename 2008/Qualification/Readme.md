@@ -1,4 +1,4 @@
-# Problem A
+# Problem A. Saving The Universe
 
 The urban legend goes that if you go to the Google homepage and search for "Google", the universe will implode. We have a secret to share... It is true! Please don't try it, or tell anyone. All right, maybe not. We are just kidding.
 
@@ -86,7 +86,7 @@ In the first case, one possible solution is to start by using Dont Ask, and swit
 For the second case, you can use B9, and not need to make any switches.
 
 
-# Problem B
+# Problem B. Train Timetable
 
 A train line has two stations on it, A and B. Trains can take trips from A to B or from B to A multiple times during a day. When a train arrives at B from A (or arrives at A from B), it needs a certain amount of time before it is ready to take the return journey - this is the turnaround time. For example, if a train arrives at 12:00 and the turnaround time is 0 minutes, it can leave immediately, at 12:00.
 
@@ -111,13 +111,13 @@ For each test case, output one line containing "Case #x: " followed by the numbe
 ### Small dataset
 
 	0 ≤ NA, NB ≤ 20
-	
+
 	0 ≤ T ≤ 5
 
 ### Large dataset
 
 	0 ≤ NA, NB ≤ 100
-	
+
 	0 ≤ T ≤ 60
 
 ## Sample
@@ -144,7 +144,7 @@ For each test case, output one line containing "Case #x: " followed by the numbe
 	Case #2: 2 0
 
 
-# Problem C
+# Problem C. Fly Swatter
 
 What are your chances of hitting a fly with a tennis racquet?
 
@@ -154,6 +154,7 @@ The ring is covered with horizontal and vertical strings. Each string is a cylin
 
 The fly is a sphere of radius f. Assume that the racquet is moving in a straight line perpendicular to the plane of the ring. Assume also that the fly's center is inside the outer radius of the racquet and is equally likely to be anywhere within that radius. Any overlap between the fly and the racquet (the ring or a string) counts as a hit.
 
+![scetch](download.png)
 
 ## Input
 

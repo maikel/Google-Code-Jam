@@ -1,1 +1,2 @@
 add_executable(saving_the_universe saving_the_universe.cpp)
+add_executable(train_timetable train_timetable.cpp)
