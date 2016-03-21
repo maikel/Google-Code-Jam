@@ -1,2 +1,3 @@
 add_subdirectory(Qualification)
 add_subdirectory(Round1A)
+add_subdirectory(Round1B)
