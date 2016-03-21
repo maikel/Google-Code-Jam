@@ -1,0 +1,1 @@
+add_executable(crop_triangles crop_triangles.cpp)

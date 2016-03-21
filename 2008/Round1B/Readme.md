@@ -6,50 +6,51 @@ You will be given a set of points with integer coordinates giving the location o
 
 If a triangle has area 0 we will still consider it a valid triangle.
 
-Input
+## Input
 
 The first line of input gives the number of cases, N. N test cases follow. Each test case consists of one line containing the integers n, A, B, C, D, x0, y0 and M separated by exactly one space. n will be the number of trees in the input set. Using the numbers n, A, B, C, D, x0, y0 and M the following pseudocode will print the coordinates of the trees in the input set. mod indicates the remainder operation.
 
 The parameters will be chosen such that the input set of trees will not have duplicates.
 
-X = x0, Y = y0
-print X, Y
-for i = 1 to n-1
-  X = (A * X + B) mod M
-  Y = (C * Y + D) mod M
-  print X, Y
-Output
+	X = x0, Y = y0
+	print X, Y
+	for i = 1 to n-1
+	  X = (A * X + B) mod M
+	  Y = (C * Y + D) mod M
+	  print X, Y
+	Output
 
 For each test case, output one line containing "Case #X: " where X is the test case number (starting from 1). This should be followed by an integer indicating the number of triangles which can be located at 3 distinct trees and has a center that is a grid point.
 
-Limits
+## Limits
 
-1 <= N <= 10, 
-0 <= A, B, C, D, x0, y0<= 109, 
-1 <= M <= 109.
+	1 <= N <= 10, 
+	0 <= A, B, C, D, x0, y0<= 109, 
+	1 <= M <= 109.
 
-Small dataset
+### Small dataset
 
-3 <= n <= 100.
-Large dataset
+	3 <= n <= 100.
 
-3 <= n <= 100000.
-Sample
+### Large dataset
+
+	3 <= n <= 100000.
+
+## Sample
 
 
-Input 
- 	
-Output 
- 
-2
-4 10 7 1 2 0 1 20
-6 2 0 2 1 1 2 11
+### Input 
 
-Case #1: 1
-Case #2: 2
+	2
+	4 10 7 1 2 0 1 20
+	6 2 0 2 1 1 2 11
+
+### Output 
+
+	Case #1: 1
+	Case #2: 2
 
 In the first test case, the 4 trees in the generated input set are (0, 1), (7, 3), (17, 5), (17, 7).
-
 
 # Problem B. Number Sets
 
@@ -61,49 +62,44 @@ Then you consider each pair of integers in the interval. If the two integers sha
 
 How many different sets there will be at the end of this process?
 
-Input
+## Input
 
 One line containing an integer C, the number of test cases in the input file.
 
 For each test case, there will be one line containing three single-space-separated integers A, B, and P. A and B are the first and last integers in the interval, and P is the number as described above.
 
-Output
+## Output
 
 For each test case, output one line containing the string "Case #X: Y" where X is the number of the test case, starting from 1, and Y is the number of sets.
 
-Limits
+## Limits
 
-Small dataset
+### Small dataset
 
-1 <= C <= 10
+	1 <= C <= 10
+	1 <= A <= B <= 1000
+	2 <= P <= B
 
-1 <= A <= B <= 1000
+### Large dataset
 
-2 <= P <= B
+	1 <= C <= 100
+	1 <= A <= B <= 1012
+	B <= A + 1000000
+	2 <= P <= B
 
-Large dataset
-
-1 <= C <= 100
-
-1 <= A <= B <= 1012
-
-B <= A + 1000000
-
-2 <= P <= B
-
-Sample
+## Sample
 
 
-Input 
- 	
-Output 
+### Input
  
-2
-10 20 5
-10 20 3
+	2
+	10 20 5
+	10 20 3
 
-Case #1: 9
-Case #2: 7
+### Output 
+
+	Case #1: 9
+	Case #2: 7
 
 
 # Problem C. Mousetrap
